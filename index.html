@@ -13,9 +13,16 @@
               "pageInfo" : {
                   "pageName": "Da Home Page Bruh"
                   }
-              }
+              },
+          "timesButtonClicked": 0
           
       };
+
+      function homeButtonClicked(){
+        digitalData.timesButtonClicked += 1
+        console.log("clicked " + digitalData.timesButtonClicked + " times")
+      }
+
       </script>
 
   </head>
@@ -24,7 +31,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <button type="button" id="test_button">Click Me!</button> 
+    <button type="button" id="test_button" onclick ="homeButtonClicked()">Click Me!</button> 
   </body>
 </html>
 
